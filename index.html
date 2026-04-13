@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ekolyra, Sage & Stone — Design System</title>
+  <title>Ekolyra — Design System</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
-  <div class="ambient ambient-c"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="noise"></div>
 
-  <header class="topbar shell glass">
-    <div>
-      <p class="eyebrow">Ekolyra, Sage & Stone</p>
-      <h1 class="hero-title">Design System</h1>
-      <p class="hero-subtitle">Technology in harmony. O ecossistema por trás de cada solução digital.</p>
+  <header class="topbar glass">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div>
+        <strong>Ekolyra</strong>
+        <span>Sage & Stone</span>
+      </div>
     </div>
 
     <div class="topbar-actions">
@@ -28,348 +32,340 @@
     </div>
   </header>
 
-  <main class="shell stack-xl">
-    <section class="section glass">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Foundations</p>
-          <h2 class="section-title">Typography</h2>
-        </div>
-      </div>
+  <main class="container">
+    <section class="hero glass">
+      <div class="eyebrow">HOLDING / ECOSSISTEMA DIGITAL</div>
+      <h1>Technology <br />in harmony.</h1>
+      <p>
+        O ecossistema por trás de cada solução digital. Um sistema visual orgânico,
+        editorial e atemporal para produtos com presença, calma e sofisticação.
+      </p>
 
-      <div class="stack-lg">
-        <h1>Título H1 — Editorial, orgânico e premium</h1>
-        <h2>Título H2 — Estrutura calma e refinada</h2>
-        <h3>Título H3 — Sofisticação silenciosa</h3>
-        <p class="lead">
-          Este sistema visual foi criado para transmitir permanência, ecossistema, natureza e tecnologia em equilíbrio.
-        </p>
-        <p>
-          O objetivo aqui é criar uma base reutilizável para landing pages, dashboards, formulários, sistemas administrativos e produtos digitais com identidade coerente.
-        </p>
-        <p class="muted">Texto secundário / muted / apoio visual.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary">Saiba mais</button>
+        <button class="btn btn-secondary">Explorar sistema</button>
       </div>
     </section>
 
-    <section class="section glass">
+    <section class="section">
       <div class="section-head">
-        <div>
-          <p class="eyebrow">Foundations</p>
-          <h2 class="section-title">Colors, badges and chips</h2>
-        </div>
+        <h2>Tokens</h2>
+        <p>Base visual da marca.</p>
       </div>
 
-      <div class="palette-grid">
-        <div class="color-card">
-          <div class="swatch" style="background:#141810"></div>
-          <strong>SOIL</strong>
-          <span>#141810</span>
-        </div>
-        <div class="color-card">
-          <div class="swatch" style="background:#2A3020"></div>
-          <strong>BARK</strong>
-          <span>#2A3020</span>
-        </div>
-        <div class="color-card">
-          <div class="swatch" style="background:#4A5438"></div>
-          <strong>MOSS</strong>
-          <span>#4A5438</span>
-        </div>
-        <div class="color-card">
-          <div class="swatch" style="background:#7A8C62"></div>
-          <strong>SAGE</strong>
-          <span>#7A8C62</span>
-        </div>
-        <div class="color-card">
-          <div class="swatch" style="background:#B2C49A"></div>
-          <strong>MIST</strong>
-          <span>#B2C49A</span>
-        </div>
-      </div>
-
-      <div class="row wrap">
-        <span class="badge badge-soft">Soft</span>
-        <span class="badge badge-success">Success</span>
-        <span class="badge badge-warning">Warning</span>
-        <span class="badge badge-danger">Danger</span>
-        <span class="chip">Organic</span>
-        <span class="chip">Editorial</span>
-        <span class="chip active">Ecosystem</span>
+      <div class="grid grid-5">
+        <div class="token glass"><span>SOIL</span><strong>#141810</strong></div>
+        <div class="token glass"><span>BARK</span><strong>#2A3020</strong></div>
+        <div class="token glass"><span>MOSS</span><strong>#4A5438</strong></div>
+        <div class="token glass"><span>SAGE</span><strong>#7A8C62</strong></div>
+        <div class="token glass"><span>MIST</span><strong>#B2C49A</strong></div>
       </div>
     </section>
 
-    <section class="section glass">
+    <section class="section">
       <div class="section-head">
-        <div>
-          <p class="eyebrow">Actions</p>
-          <h2 class="section-title">Buttons</h2>
-        </div>
+        <h2>Botões</h2>
+        <p>Estados principais do sistema.</p>
       </div>
 
-      <div class="row wrap">
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">Secondary</button>
+      <div class="row glass panel">
+        <button class="btn btn-primary">Primário</button>
+        <button class="btn btn-secondary">Secundário</button>
         <button class="btn btn-ghost">Ghost</button>
+        <button class="btn btn-soft">Soft</button>
         <button class="btn btn-danger">Danger</button>
         <button class="btn btn-primary" disabled>Disabled</button>
       </div>
     </section>
 
-    <section class="section glass">
+    <section class="section">
       <div class="section-head">
-        <div>
-          <p class="eyebrow">Forms</p>
-          <h2 class="section-title">Inputs & controls</h2>
-        </div>
+        <h2>Badges, chips e avatar</h2>
       </div>
 
-      <div class="form-grid">
-        <div class="field">
-          <label class="label">Nome</label>
-          <input class="input" type="text" placeholder="Digite seu nome" />
-          <small class="hint">Campo padrão com efeito glass.</small>
-        </div>
+      <div class="row glass panel wrap">
+        <span class="badge badge-success">Active</span>
+        <span class="badge badge-warning">Pending</span>
+        <span class="badge badge-neutral">Neutral</span>
 
-        <div class="field">
-          <label class="label">E-mail</label>
-          <input class="input" type="email" placeholder="voce@ekolyra.com" />
-        </div>
+        <button class="chip">Nature</button>
+        <button class="chip active">Ecosystem</button>
+        <button class="chip">Holding</button>
 
-        <div class="field">
-          <label class="label">Senha</label>
-          <div class="input-icon-wrap">
-            <input class="input" type="password" placeholder="••••••••" />
-            <button class="input-icon" type="button">👁</button>
+        <div class="avatar">E</div>
+        <div class="avatar avatar-img">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Avatar">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Campos</h2>
+        <p>Inputs customizados com liquid glass.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="glass panel form-card">
+          <div class="field">
+            <label>Nome</label>
+            <input class="input" type="text" placeholder="Seu nome" />
+          </div>
+
+          <div class="field">
+            <label>E-mail</label>
+            <input class="input" type="email" placeholder="voce@email.com" />
+          </div>
+
+          <div class="field">
+            <label>Mensagem</label>
+            <textarea class="textarea" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+
+          <div class="field">
+            <label>Volume</label>
+            <input class="range" type="range" min="0" max="100" value="46" />
           </div>
         </div>
 
-        <div class="field">
-          <label class="label">Busca</label>
-          <input class="input" type="search" placeholder="Buscar..." />
-        </div>
+        <div class="glass panel form-card">
+          <div class="field">
+            <label>Select custom</label>
+            <div class="custom-select" data-select>
+              <button class="select-trigger" type="button">
+                <span class="select-value">Selecione um setor</span>
+                <span class="select-icon">⌄</span>
+              </button>
 
-        <div class="field">
-          <label class="label">Data</label>
-          <input class="input input-native-reset" type="date" />
-        </div>
-
-        <div class="field">
-          <label class="label">Hora</label>
-          <input class="input input-native-reset" type="time" />
-        </div>
-
-        <div class="field field-full">
-          <label class="label">Mensagem</label>
-          <textarea class="textarea" placeholder="Escreva aqui..."></textarea>
-        </div>
-
-        <div class="field">
-          <label class="label">Select custom</label>
-          <div class="custom-select" data-select>
-            <button class="select-trigger" type="button" data-select-trigger>
-              <span data-select-value>Selecione uma opção</span>
-              <span class="caret">⌄</span>
-            </button>
-            <div class="select-menu" data-select-menu>
-              <button type="button" class="select-option" data-value="nature">Nature</button>
-              <button type="button" class="select-option" data-value="ecosystem">Ecosystem</button>
-              <button type="button" class="select-option" data-value="infrastructure">Infrastructure</button>
+              <div class="select-menu">
+                <button class="select-option" type="button" data-value="mare">Mare</button>
+                <button class="select-option" type="button" data-value="equipedia">Equipédia</button>
+                <button class="select-option" type="button" data-value="epid">EPID</button>
+              </div>
+              <input type="hidden" name="sector" />
             </div>
-            <input type="hidden" name="customSelect" />
           </div>
-        </div>
 
-        <div class="field">
-          <label class="label">Estado</label>
-          <input class="input is-error" type="text" placeholder="Campo com erro" />
-          <small class="error-text">Preencha este campo corretamente.</small>
+          <div class="field">
+            <label>Data</label>
+            <div class="date-wrap">
+              <input class="input" type="date" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Hora</label>
+            <div class="time-wrap">
+              <input class="input" type="time" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Busca</label>
+            <div class="input-icon-wrap">
+              <span class="input-icon">⌕</span>
+              <input class="input input-iconed" type="text" placeholder="Pesquisar..." />
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="form-split">
-        <div class="field">
-          <label class="label">Radio group</label>
-          <div class="control-group">
-            <label class="radio">
-              <input type="radio" name="plan" checked />
-              <span class="radio-ui"></span>
-              <span>Base</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="plan" />
-              <span class="radio-ui"></span>
-              <span>Pro</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="plan" />
-              <span class="radio-ui"></span>
-              <span>Custom</span>
-            </label>
-          </div>
-        </div>
+    <section class="section">
+      <div class="section-head">
+        <h2>Checkbox, radio e switch</h2>
+      </div>
 
-        <div class="field">
-          <label class="label">Checkbox group</label>
-          <div class="control-group">
-            <label class="checkbox">
-              <input type="checkbox" checked />
-              <span class="checkbox-ui"></span>
-              <span>Receber novidades</span>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" />
-              <span class="checkbox-ui"></span>
-              <span>Aceitar termos</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="field">
-          <label class="label">Switch</label>
-          <label class="switch">
+      <div class="grid grid-3">
+        <div class="glass panel">
+          <label class="check">
             <input type="checkbox" checked />
-            <span class="switch-ui"></span>
-            <span>Ativar modo inteligente</span>
+            <span class="check-ui"></span>
+            <span class="check-text">Aceitar termos</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" />
+            <span class="check-ui"></span>
+            <span class="check-text">Receber novidades</span>
           </label>
         </div>
 
-        <div class="field">
-          <label class="label">Range</label>
-          <input class="range" type="range" min="0" max="100" value="50" />
+        <div class="glass panel">
+          <label class="radio">
+            <input type="radio" name="plan" checked />
+            <span class="radio-ui"></span>
+            <span class="radio-text">Plano Base</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="plan" />
+            <span class="radio-ui"></span>
+            <span class="radio-text">Plano Premium</span>
+          </label>
+        </div>
+
+        <div class="glass panel">
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="switch-ui"></span>
+            <span class="switch-text">Modo inteligente</span>
+          </label>
+
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="switch-ui"></span>
+            <span class="switch-text">Automação ativa</span>
+          </label>
         </div>
       </div>
     </section>
 
-    <section class="section glass">
+    <section class="section">
       <div class="section-head">
-        <div>
-          <p class="eyebrow">Navigation</p>
-          <h2 class="section-title">Tabs, breadcrumb, pagination</h2>
-        </div>
+        <h2>Navegação</h2>
       </div>
 
-      <nav class="breadcrumb">
-        <a href="#">Home</a>
-        <span>/</span>
-        <a href="#">Sistema</a>
-        <span>/</span>
-        <span>Design System</span>
-      </nav>
+      <div class="glass panel stack-md">
+        <nav class="breadcrumbs">
+          <a href="#">Início</a>
+          <span>/</span>
+          <a href="#">Sistema</a>
+          <span>/</span>
+          <span>Componentes</span>
+        </nav>
 
-      <div class="tabs" data-tabs>
-        <div class="tab-list">
-          <button class="tab active" data-tab="overview">Overview</button>
-          <button class="tab" data-tab="components">Components</button>
-          <button class="tab" data-tab="tokens">Tokens</button>
-        </div>
+        <div class="tabs" data-tabs>
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="tab-1">Visão geral</button>
+            <button class="tab-btn" data-tab="tab-2">Tokens</button>
+            <button class="tab-btn" data-tab="tab-3">Componentes</button>
+          </div>
 
-        <div class="tab-panel active" data-panel="overview">
-          <p>Visão geral do sistema visual, identidade e regras de uso.</p>
-        </div>
-        <div class="tab-panel" data-panel="components">
-          <p>Lista de componentes reutilizáveis e seus estados visuais.</p>
-        </div>
-        <div class="tab-panel" data-panel="tokens">
-          <p>Variáveis de cor, tipografia, sombras, espaçamentos e radius.</p>
-        </div>
-      </div>
-
-      <div class="pagination">
-        <button class="page-btn">‹</button>
-        <button class="page-btn active">1</button>
-        <button class="page-btn">2</button>
-        <button class="page-btn">3</button>
-        <button class="page-btn">›</button>
-      </div>
-    </section>
-
-    <section class="grid-2">
-      <div class="section glass">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Feedback</p>
-            <h2 class="section-title">Alerts</h2>
+          <div class="tabs-content">
+            <div class="tab-panel active" id="tab-1">Uma interface pensada para calma, permanência e sofisticação.</div>
+            <div class="tab-panel" id="tab-2">Cores naturais, tipografia editorial e superfícies soft glass.</div>
+            <div class="tab-panel" id="tab-3">Inputs, botões, tabelas, modais, dropdowns, toast e mais.</div>
           </div>
         </div>
 
-        <div class="stack-md">
-          <div class="alert alert-info">Informação importante sobre o sistema.</div>
-          <div class="alert alert-success">Operação concluída com sucesso.</div>
-          <div class="alert alert-warning">Atenção: revise os dados informados.</div>
-          <div class="alert alert-danger">Erro ao salvar. Tente novamente.</div>
-        </div>
-      </div>
-
-      <div class="section glass">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Feedback</p>
-            <h2 class="section-title">Progress & loader</h2>
-          </div>
-        </div>
-
-        <div class="stack-md">
-          <div class="progress">
-            <div class="progress-bar" style="width: 68%"></div>
-          </div>
-          <div class="loader"></div>
-          <div class="skeleton skeleton-line"></div>
-          <div class="skeleton skeleton-line short"></div>
-          <div class="skeleton skeleton-card"></div>
+        <div class="pagination">
+          <button class="page-btn">←</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">→</button>
         </div>
       </div>
     </section>
 
-    <section class="grid-3">
-      <article class="card glass">
-        <div class="card-top">
-          <span class="badge badge-soft">Card</span>
-          <button class="icon-btn" data-tooltip="Ações rápidas">⋯</button>
-        </div>
-        <h3 class="card-title">Infrastructure</h3>
-        <p class="card-text">Componentes para ambientes corporativos, dashboards e fluxos de gestão.</p>
-        <div class="row">
-          <button class="btn btn-secondary">Detalhes</button>
-        </div>
-      </article>
-
-      <article class="card glass">
-        <div class="card-top">
-          <span class="badge badge-success">Live</span>
-          <button class="icon-btn" data-tooltip="Editar item">✎</button>
-        </div>
-        <h3 class="card-title">Ecosystem</h3>
-        <p class="card-text">Sistema visual coerente para todos os produtos do grupo.</p>
-        <div class="avatar-row">
-          <div class="avatar">E</div>
-          <div class="avatar">S</div>
-          <div class="avatar">S</div>
-        </div>
-      </article>
-
-      <article class="card glass empty-state">
-        <div class="empty-icon">✦</div>
-        <h3 class="card-title">Nenhum item encontrado</h3>
-        <p class="card-text">Quando não houver dados, o sistema continua elegante e claro.</p>
-        <button class="btn btn-primary" id="showToastBtn">Mostrar toast</button>
-      </article>
-    </section>
-
-    <section class="section glass">
+    <section class="section">
       <div class="section-head">
-        <div>
-          <p class="eyebrow">Data</p>
-          <h2 class="section-title">Table</h2>
-        </div>
+        <h2>Dropdown e tooltip</h2>
       </div>
 
-      <div class="table-wrap">
+      <div class="glass panel row wrap">
+        <div class="dropdown" data-dropdown>
+          <button class="btn btn-secondary dropdown-trigger" type="button">
+            Abrir menu
+          </button>
+
+          <div class="dropdown-menu">
+            <button class="dropdown-item">Perfil</button>
+            <button class="dropdown-item">Configurações</button>
+            <button class="dropdown-item">Sair</button>
+          </div>
+        </div>
+
+        <button class="btn btn-soft tooltip-wrap">
+          Hover aqui
+          <span class="tooltip">Tooltip orgânico e suave</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Cards</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card glass">
+          <div class="card-glow"></div>
+          <span class="badge badge-success">Ecossistema</span>
+          <h3>Infraestrutura viva</h3>
+          <p>Sistemas conectados com presença visual calma e alto valor percebido.</p>
+          <button class="btn btn-ghost">Ver mais</button>
+        </article>
+
+        <article class="card glass">
+          <div class="card-glow"></div>
+          <span class="badge badge-warning">Holding</span>
+          <h3>Camadas consistentes</h3>
+          <p>Componentes reutilizáveis com comportamento previsível e identidade forte.</p>
+          <button class="btn btn-ghost">Ver mais</button>
+        </article>
+
+        <article class="card glass">
+          <div class="card-glow"></div>
+          <span class="badge badge-neutral">Editorial</span>
+          <h3>Organic UI</h3>
+          <p>Tipografia com respiro, superfícies naturais e gradientes inspirados em luz difusa.</p>
+          <button class="btn btn-ghost">Ver mais</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Accordion</h2>
+      </div>
+
+      <div class="accordion glass panel" data-accordion>
+        <div class="accordion-item active">
+          <button class="accordion-trigger">
+            <span>O que é liquid glass verdadeiro?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>É uma combinação de transparência real, blur, reflexo interno, borda luminosa suave, profundidade e contraste controlado.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Qual fonte usar?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Cormorant Garamond para títulos e Manrope para corpo dão o equilíbrio ideal entre editorial e tecnologia calma.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger">
+            <span>Esse sistema suporta light e dark mode?</span>
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Sim. O tema é controlado pelo atributo <code>data-theme</code> no elemento html.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Tabela</h2>
+      </div>
+
+      <div class="glass table-wrap">
         <table class="table">
           <thead>
             <tr>
               <th>Produto</th>
               <th>Status</th>
-              <th>Responsável</th>
+              <th>Segmento</th>
               <th>Atualização</th>
             </tr>
           </thead>
@@ -377,78 +373,57 @@
             <tr>
               <td>Mare</td>
               <td><span class="badge badge-success">Ativo</span></td>
-              <td>Equipe core</td>
+              <td>Hospitality</td>
               <td>Hoje</td>
             </tr>
             <tr>
               <td>Equipédia</td>
-              <td><span class="badge badge-soft">Em evolução</span></td>
-              <td>Produto</td>
+              <td><span class="badge badge-warning">Construção</span></td>
+              <td>Equino</td>
               <td>Ontem</td>
             </tr>
             <tr>
               <td>EPID</td>
-              <td><span class="badge badge-warning">Planejamento</span></td>
-              <td>Estratégia</td>
-              <td>Esta semana</td>
+              <td><span class="badge badge-neutral">Planejamento</span></td>
+              <td>Identity</td>
+              <td>2 dias</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
-
-    <section class="section glass">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Disclosure</p>
-          <h2 class="section-title">Accordion & dropdown</h2>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <details>
-          <summary>Como o liquid glass deve ser aplicado?</summary>
-          <p>Com transparência moderada, blur real, highlight interno e sombra suave, sem exagerar no brilho.</p>
-        </details>
-        <details>
-          <summary>Como usar os gradientes?</summary>
-          <p>Como luz ambiente e profundidade, não como elemento berrante.</p>
-        </details>
-      </div>
-
-      <div class="dropdown" data-dropdown>
-        <button class="btn btn-secondary" data-dropdown-trigger>Abrir dropdown</button>
-        <div class="dropdown-menu" data-dropdown-menu>
-          <button class="dropdown-item">Editar</button>
-          <button class="dropdown-item">Duplicar</button>
-          <button class="dropdown-item danger">Excluir</button>
-        </div>
-      </div>
-    </section>
   </main>
 
   <div class="modal-backdrop" id="modalBackdrop">
-    <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal glass">
       <div class="modal-head">
         <div>
-          <p class="eyebrow">Modal</p>
-          <h3 id="modalTitle">Painel de confirmação</h3>
+          <h3>Modal Ekolyra</h3>
+          <p>Exemplo de componente premium.</p>
         </div>
-        <button class="icon-btn" id="closeModalBtn">✕</button>
+        <button class="icon-btn" id="closeModalBtn">×</button>
       </div>
-      <p class="modal-text">
-        Este modal segue a linguagem do sistema: orgânico, arredondado, soft e com liquid glass real.
-      </p>
-      <div class="row end">
+
+      <div class="modal-body">
+        <div class="field">
+          <label>Título</label>
+          <input class="input" type="text" placeholder="Digite algo" />
+        </div>
+
+        <div class="field">
+          <label>Descrição</label>
+          <textarea class="textarea" placeholder="Escreva aqui"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-actions">
         <button class="btn btn-ghost" id="cancelModalBtn">Cancelar</button>
-        <button class="btn btn-primary">Confirmar</button>
+        <button class="btn btn-primary" id="toastBtn">Salvar</button>
       </div>
     </div>
   </div>
 
   <div class="toast-stack" id="toastStack"></div>
-
-  <div class="tooltip" id="tooltip"></div>
 
   <script src="script.js"></script>
 </body>
